@@ -5,7 +5,7 @@ import google.generativeai as genai
 app = Flask(__name__)
 
 # Configura a chave da API do Gemini (substitua pela sua)
-genai.configure(api_key='AIzaSyAAkTiXLfKBRUSNAfi0b2vLYPFnTtaZH0E')
+genai.configure(api_key='AIzaSyAAkTiXLfKBRUSNAfi0b2vLYPFTtaZH0E')
 
 # Função para consultar o modelo do Gemini
 def chamar_modelo_ia(mensagem):
