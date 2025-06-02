@@ -1,0 +1,138 @@
+   :root {
+      --bg-color: #1f2a48;
+      --text-color: #ffffff;
+      --card-color: #2d3b64;
+      --user-color: #4ea8ff;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    /* Navegação */
+    .navbar {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .navbar h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links li a {
+      color: var(--user-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links li a:hover {
+      text-decoration: underline;
+    }
+
+    .theme-toggle {
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: var(--text-color);
+    }
+
+    .chat-box {
+      width: 100%;
+      max-width: 600px;
+      background: var(--card-color);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      height: 70vh;
+      overflow-y: auto;
+    }
+
+    .message {
+      margin: 10px 0;
+      white-space: pre-wrap;
+    }
+
+    .user {
+      text-align: right;
+      color: var(--user-color);
+    }
+
+    .bot {
+      text-align: left;
+      color: var(--text-color);
+    }
+
+    .input-box {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      margin-top: 10px;
+    }
+
+    input {
+      flex: 1;
+      padding: 10px;
+      font-size: 1em;
+      background-color: var(--card-color);
+      color: var(--text-color);
+      border: 1px solid #3c4c74;
+      border-radius: 4px 0 0 4px;
+    }
+
+    input::placeholder {
+      color: #ccc;
+    }
+
+    button {
+      padding: 10px 15px;
+      background: var(--user-color);
+      border: none;
+      color: #ffffff;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 0 4px 4px 0;
+    }
+
+    button:hover {
+      background: #3a95e0;
+    }
+
+   /* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 0;
+  font-size: 0.9em;
+  color: #777;
+  border-top: 1px solid #ccc;
+}
+
+    /* Tema claro (opcional) */
+    .light-theme {
+      --bg-color: #f5f5f5;
+      --text-color: #000000;
+      --card-color: #ffffff;
+      --user-color: #007bff;
+    }

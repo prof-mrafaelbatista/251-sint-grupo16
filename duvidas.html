@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat Gemini</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='styled.css') }}">
+</head>
+<body>
+  <!-- Cabeçalho com navegação -->
+  <nav class="navbar">
+    <h1>Chat Gemini</h1>
+    <ul class="nav-links">
+     <li><a href="{{ url_for('home') }}">Início</a></li>
+          <li><a href="{{ url_for('quiz') }}">Quiz</a></li>
+          <li><a href="{{ url_for('teoria') }}">Teoria</a></li>
+          <li><a href="{{ url_for('duvidas') }}">IA</a></li>
+    </ul>
+    <button class="theme-toggle" id="theme-toggle">☀️ / 🌙</button>
+  </nav>
+
+  <!-- Caixa de mensagens -->
+  <div class="chat-box" id="chatBox"></div>
+
+  <!-- Campo de entrada -->
+  <div class="input-box">
+    <input type="text" id="userInput" placeholder="Digite sua mensagem..."/>
+    <button id="sendButton">Enviar</button>
+  </div>
+  <div>
+    <!-- Rodapé -->
+    <footer>
+      <p id="footer-date">Carregando data...</p>
+      <p> Responsável pelo site: Ana Julya Rodrigues Dionizio</p>
+      <footer class="footer">
+  <a href="https://www.instagram.com/julya_rd/" target="_blank" class="social-icon">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://discord.gg/6X2YvKhwtR" target="_blank" class="social-icon">
+    <i class="fab fa-discord"></i>
+  </a>
+</footer>
+    </footer>
+  </div>
+
+  <!-- JavaScript separado -->
+  <script src="{{ url_for('static', filename='scriptd.js') }}"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,133 @@
+:root {
+  --bg-color: #1f2a48;
+  --text-color: #ffffff;
+  --card-color: #1d3b64;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: left;
+  width: 90%;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.subjects {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.subject {
+  background-color: var(--card-color);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.subject:hover {
+  transform: scale(1.03);
+}
+/* Cabeçalho */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #2c7be5;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+  color: #1a5cc8;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 0;
+  font-size: 0.9em;
+  color: #777;
+  border-top: 1px solid #ccc;
+}
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #0a1f44;
+}
+
+.social-icon {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #ccc;
+}

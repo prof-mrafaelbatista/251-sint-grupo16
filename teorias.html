@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resumo - Python Quiz</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='stylet.css') }}"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav class="navbar">
+        <h1>Python Quiz</h1>
+        <ul class="nav-links">
+          <li><a href="{{ url_for('home') }}">Início</a></li>
+          <li><a href="{{ url_for('quiz') }}">Quiz</a></li>
+          <li><a href="{{ url_for('teoria') }}">Teoria</a></li>
+          <li><a href="{{ url_for('duvidas') }}">IA</a></li>
+        </ul>
+        <br>
+         <button class="theme-toggle" id="theme-toggle">
+          <span class="sun">☀️</span>
+          <span class="moon">🌙</span>
+        </button>
+      </nav>
+    </header>
+    <header>
+      <h1>Resumo dos Tópicos do <span>Python Quiz</span></h1>
+      <p>Relembre os conceitos antes de começar o quiz.</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>1. Estruturas de Seleção</h2>
+        <p>Usadas para tomar decisões com base em condições:</p>
+        <ul>
+          <li><strong>if</strong>: executa se a condição for verdadeira.</li>
+          <li><strong>elif</strong>: verifica nova condição se a anterior for falsa.</li>
+          <li><strong>else</strong>: executa se nenhuma das anteriores for verdadeira.</li>
+        </ul>
+        <pre><code>if x > 0:
+    print("Positivo")
+elif x < 0:
+    print("Negativo")
+else:
+    print("Zero")</code></pre>
+      </section>
+
+      <section>
+        <h2>2. Estruturas de Repetição</h2>
+        <p>Permitem repetir blocos de código:</p>
+        <ul>
+          <li><strong>for</strong>: percorre uma sequência.</li>
+          <li><strong>while</strong>: repete enquanto a condição for verdadeira.</li>
+        </ul>
+        <pre><code>for i in range(5):
+    print(i)
+
+while x < 10:
+    x += 1</code></pre>
+      </section>
+
+      <section>
+        <h2>3. Vetores e Matrizes</h2>
+        <p>Armazenam coleções de dados:</p>
+        <ul>
+          <li><strong>list</strong>: lista (vetor) em Python.</li>
+          <li><strong>list de list</strong>: estrutura de matriz (2D).</li>
+        </ul>
+        <pre><code>vetor = [1, 2, 3]
+matriz = [[1, 2], [3, 4]]</code></pre>
+      </section>
+
+      <section>
+        <h2>4. Funções e Procedimentos</h2>
+        <p>Organizam o código em blocos reutilizáveis:</p>
+        <ul>
+          <li>Definidas com <code>def</code>.</li>
+          <li>Podem receber parâmetros e retornar valores.</li>
+        </ul>
+        <pre><code>def saudacao(nome):
+    print(f"Olá, {nome}!")
+
+def somar(a, b):
+    return a + b</code></pre>
+      </section>
+
+      <section>
+        <h2>5. Tratamento de Exceções</h2>
+        <p>Permite tratar erros e evitar que o programa pare:</p>
+        <ul>
+          <li><strong>try</strong>: onde pode ocorrer erro.</li>
+          <li><strong>except</strong>: executado em caso de erro.</li>
+        </ul>
+        <pre><code>try:
+    x = int(input("Digite um número: "))
+except ValueError:
+    print("Valor inválido!")</code></pre>
+      </section>
+
+    </main>
+    <ul class="subjects">
+      <li><span>💻</span> <a href="{{ url_for('quiz') }}">Inicie o Quiz</a></li>
+    </ul>
+<footer>
+      <p id="footer-date">Carregando data...</p>
+      <p> Responsável pelo site: Ana Julya Rodrigues Dionizio</p>
+     <footer class="footer">
+  <a href="https://www.instagram.com/julya_rd/" target="_blank" class="social-icon">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://discord.gg/6X2YvKhwtR" target="_blank" class="social-icon">
+    <i class="fab fa-discord"></i>
+  </a>
+</footer>
+
+    </footer>
+  </div>
+
+   <script src="{{ url_for('static', filename='scriptt.js') }}"></script>
+
+</body></html>

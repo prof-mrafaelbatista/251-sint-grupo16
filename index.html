@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python Quiz</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Cabeçalho com Navegação -->
+    <header>
+      <nav class="navbar">
+        <h1>Python Quiz</h1>
+        <ul class="nav-links">
+          <li><a href="{{ url_for('home') }}">Inicio</a></li>
+          <li><a href="{{ url_for('quiz') }}">Quiz</a></li>
+          <li><a href="{{ url_for('teoria') }}">Teoria</a></li>
+          <li><a href="{{ url_for('duvidas') }}">IA</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle">
+          <span class="sun">☀️</span>
+          <span class="moon">🌙</span>
+        </button>
+      </nav>
+      <p>Escolha um assunto para começar.</p>
+      <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+      <ul class="subjects">
+        <li class="subject html"><span>💻</span> <a href="{{ url_for('quiz') }}">Quiz</a></li>
+        <li class="subject css"><span>📜</span> <a href="{{ url_for('teoria') }}">Teoria para Quiz</a></li>
+        <li class="subject js"><span>🎨</span> <a href="{{ url_for('duvidas') }}">Dúvidas com IA</a></li>
+      </ul>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <p id="footer-date">Carregando data...</p>
+      <p> Responsável pelo site: Ana Julya Rodrigues Dionizio</p>
+      <footer class="footer">
+  <a href="https://www.instagram.com/julya_rd/" target="_blank" class="social-icon">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://discord.gg/6X2YvKhwtR" target="_blank" class="social-icon">
+    <i class="fab fa-discord"></i>
+  </a>
+</footer>
+
+    </footer>
+
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

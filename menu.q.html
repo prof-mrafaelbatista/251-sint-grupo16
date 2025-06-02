@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python Quiz</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styleq.css') }}"/>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Cabeçalho com Navegação -->
+    <header>
+      <nav class="navbar">
+        <h1>Python Quiz</h1>
+        <ul class="nav-links">
+          <li><a href="{{ url_for('home') }}">Início</a></li>
+          <li><a href="{{ url_for('quiz') }}">Quiz</a></li>
+          <li><a href="{{ url_for('teoria') }}">Teoria</a></li>
+          <li><a href="{{ url_for('duvidas') }}">IA</a></li>
+        </ul>
+        <br>
+        <button class="theme-toggle" id="theme-toggle">
+          ☀️ / 🌙
+        </button>
+        <br>
+      </nav>
+      <p>Escolha um tópico para começar.</p>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main id="main">
+      <ul class="subjects">
+        <li class="subject" onclick="startQuiz('seleção')">Estruturas de Seleção</li>
+        <li class="subject" onclick="startQuiz('repetição')">Estruturas de Repetição</li>
+        <li class="subject" onclick="startQuiz('vetores')">Vetores e Matrizes</li>
+        <li class="subject" onclick="startQuiz('funções')">Funções e Procedimentos</li>
+        <li class="subject" onclick="startQuiz('exceções')">Tratamento de Exceções</li>
+      </ul>
+    </main>
+
+<!-- Rodapé -->
+   <footer>
+      <p id="footer-date">Carregando data...</p>
+      <p> Responsável pelo site: Ana Julya Rodrigues Dionizio</p>
+        <footer class="footer">
+  <a href="https://www.instagram.com/julya_rd/" target="_blank" class="social-icon">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://discord.gg/6X2YvKhwtR" target="_blank" class="social-icon">
+    <i class="fab fa-discord"></i>
+  </a>
+</footer>
+    </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='scriptq.js') }}"></script>
+
+
+</body>
+</html>
+
