@@ -3,20 +3,20 @@
 Estrutura do Projeto:
 
 ├── static/
-│   ├── script.js
-│   ├── scriptd.js
-│   ├── scriptq.js
-│   ├── scriptt.js
-│   ├── style.css
-│   ├── styled.css
-│   ├── styleq.css
-│   └── stylet.css
-├── templates/
-│   ├── index.html
-│   ├── duvidas.html
-│   ├── menu.q.html
-│   └── teorias.html
-└── app.py
+.│   ├── script.js
+.│   ├── scriptd.js
+.│   ├── scriptq.js
+.│   ├── scriptt.js
+.│   ├── style.css
+.│   ├── styled.css
+.│   ├── styleq.css
+.│   └── stylet.css
+.├── templates/
+.│   ├── index.html
+.│   ├── duvidas.html
+.│   ├── menu.q.html
+.│   └── teorias.html
+.└── app.py
 Informações do Projeto:
 🐍 Python Quiz
 
